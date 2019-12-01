@@ -1,6 +1,9 @@
 
 Simple React Hooks proyect. Fetch weater by City & Country
 
+![Preview](./preview.PNG)
+
+
 ## Setup
 Open **App.jsx** and udpate the `APP_ID` constant with your openweathermap [api key](https://home.openweathermap.org/api_keys).  
 
