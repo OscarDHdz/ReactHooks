@@ -5,8 +5,10 @@ import Form from './components/Form';
 import Error from './components/Error';
 import Weather from './components/Weather';
 
-function App() {
 
+function App() {
+  const APP_ID = '';
+  
   // Main State
   const [city, setCity] = useState('');
   const [country, setCountry] = useState('');
@@ -17,8 +19,7 @@ function App() {
   useEffect(() => {
     if (city === '') return;
     const getWather = async () => {
-      const appId = '...';
-      const url = `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${appId}`
+      const url = `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${APP_ID}`
   
       const response = await fetch(url);
       const result = await response.json();
